@@ -36,6 +36,8 @@ html a:hover {
   text-align: center;
   line-height: 8.8rem;
   height: 8.8rem;
+  z-index: 9999;
+  border-bottom: 0.1rem solid rgba(255, 255, 255, 0.134178);
 }
 .nav-header .logo {
   float: left;
@@ -73,13 +75,139 @@ html a:hover {
   color: #EB0065;
 }
 
+.backgroud-trans {
+  background-color: #1c2266;
+  border: none;
+}
+
 /*--------------------------------------------------------------
 # Hero Home
 --------------------------------------------------------------*/
 .hero-home {
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
   width: 100%;
-  height: 100vh;
+  height: 135vh;
   background-image: url("/assets/image/header-background.svg");
   background-position: top;
   background-size: cover;
+}
+.hero-home .hero-left {
+  height: 100vh;
+  align-items: flex-start;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.hero-home .hero-left h2 {
+  font-weight: 500;
+  font-size: 3.2rem;
+  line-height: 4.8rem;
+  font-style: normal;
+  letter-spacing: 0.02rem;
+  color: #ffffff;
+}
+.hero-home .hero-left p {
+  margin-top: 3rem;
+  color: #BEC1E0;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+}
+.hero-home .hero-left .buttons {
+  margin-top: 3rem;
+}
+.hero-home .hero-left .buttons button {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  text-align: center;
+  height: 4.8rem;
+  width: 20rem;
+  margin-right: 2rem;
+  border-radius: 0.8rem;
+  border: none;
+}
+.hero-home .hero-left .buttons button i {
+  margin-left: 2rem;
+  font-size: 1.8rem;
+}
+.hero-home .hero-left .buttons .button-left {
+  background-color: #EB0065;
+  color: #ffffff;
+}
+.hero-home .hero-left .buttons .button-left:hover {
+  background-color: transparent;
+  color: #ffffff;
+  border: 0.1rem solid #ffffff;
+}
+.hero-home .hero-left .buttons .button-right {
+  background-color: transparent;
+  color: #ffffff;
+  border: 0.1rem solid #ffffff;
+}
+.hero-home .hero-left .buttons .button-right:hover {
+  background-color: #EB0065;
+  color: #ffffff;
+}
+.hero-home .hero-right {
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+.hero-home .status-hero {
+  margin-top: 7rem;
+  display: flex;
+  align-items: center;
+  background: #FFFFFF;
+  box-shadow: 0px 4px 8px rgba(190, 193, 224, 0.320039);
+  border-radius: 10px;
+  height: 15rem;
+}
+.hero-home .status-hero .item-status-hero {
+  margin: 2rem;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+}
+.hero-home .status-hero .item-status-hero i {
+  font-size: 5rem;
+  float: left;
+  line-height: 6rem;
+  display: block;
+}
+.hero-home .status-hero .item-status-hero span {
+  margin-top: 0.8rem;
+  display: block;
+  margin-left: 6rem;
+  color: #6468A1;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 22px;
+}
+.hero-home .status-hero .item-status-hero h2 {
+  display: block;
+  margin-left: 6rem;
+  margin-bottom: 0;
+  color: #262C7C;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 40px;
+}
+.hero-home .status-hero .overview i {
+  color: #7ADB00;
+}
+.hero-home .status-hero .cases i {
+  color: #FF3E29;
+}
+.hero-home .status-hero .recovered i {
+  color: #00DB75;
+}
+.hero-home .status-hero .deaths i {
+  color: #3D3F52;
 }
