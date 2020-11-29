@@ -1,0 +1,87 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    box-sizing: border-box;
+    font-family: "Quicksand",
+        sans-serif;
+    font-size: 62.5%;
+    font-size: 10px;
+    a{
+        color: #ffffff;
+        text-decoration: none;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
+
+.container-header {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+/*--------------------------------------------------------------
+# Nav Header
+--------------------------------------------------------------*/
+.nav-header {
+    width: 100%;
+    position: fixed;
+    display: flex;
+    flex-wrap: nowrap;
+    text-align: center;
+    line-height: 8.8rem;
+    height: 8.8rem;
+
+    .logo {
+        float: left;
+        height: auto;
+        width: auto;
+        padding-left: 3rem;
+
+        a {
+            color: #ffffff;
+
+            span {
+                font-size: 1.6rem;
+                font-weight: 550;
+                margin-left: 1rem;
+            }
+        }
+    }
+
+    .main-list {
+        float: right;
+        height: auto;
+        width: auto;
+        padding-right: 1rem;
+        ul {
+            list-style-type: none;
+            display: flex;
+            li {
+                font-size: 1.4rem;
+                color: #BEC1E0;
+                font-style: normal;
+                font-weight: normal;
+                letter-spacing: .02rem;
+                margin: 0 2rem;
+                &:hover {
+                    color: #EB0065;
+                }
+        }
+        }
+    }
+}
+/*--------------------------------------------------------------
+# Hero Home
+--------------------------------------------------------------*/
+.hero-home{
+    width: 100%;
+    height: 100vh;
+    background-image: url("/assets/image/header-background.svg");
+    background-position: top;
+    background-size: cover;
+}
