@@ -90,7 +90,7 @@ html a:hover {
   right: 0;
   width: 100%;
   height: 135vh;
-  background-image: url("assets/image/header-background.svg");
+  background-image: url("/assets/image/header-background.svg");
   background-position: top;
   background-size: cover;
 }
