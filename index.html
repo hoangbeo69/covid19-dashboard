@@ -10,12 +10,12 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
         rel="stylesheet">
+    <!-- Bootstrap CSS -->
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Vendor CSS File -->
     <link rel="stylesheet" href="assets/vendor/jquery/jquery.min.js" />
     <link rel="stylesheet" href="assets/vendor/boxicons-2.0.7/css/boxicons.min.css" />
     <link href="assets/vendor/icofont/icofont.min.css" rel="stylesheet" />
-    <!-- Bootstrap CSS -->
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
     <!-- Main CSS -->
     <link rel="stylesheet" href="assets/css/style.css" />
 </head>
@@ -52,6 +52,7 @@
         </div>
     </nav>
     <!--End Nav Bar -->
+    <!-- Hero Home -->
     <section class="hero-home">
         <div class="container">
             <div class="row">
@@ -71,37 +72,81 @@
                     <img src="assets/image/covid-viruss-big.svg" alt="COVID-19">
                 </div>
             </div>
-            <div class="status-hero">
-                <div class="item-status-hero overview">
-                    <i class='icofont-globe'></i>
-                    <span>Stats Overview</span>
-                    <h2>Global</h2>
-                </div>
-                <div class="item-status-hero cases">
-                    <i class='bx bxs-virus'></i>
-                    <span>Totol Coronavirus Cases</span>
-                    <h2>1,234,543</h2>
-                </div>
-                <div class="item-status-hero recovered">
-                    <i class='bx bxs-virus'></i>
-                    <span>Total Recovered</span>
-                    <h2>259,554</h2>
-                </div>
-                <div class="item-status-hero deaths">
-                    <i class='bx bxs-virus'></i>
-                    <span>Total Deaths</span>
-                    <h2>68,184</h2>
-                </div>
-            </div>
         </div>
     </section>
-    <!-- Hero Home -->
-
     <!-- End Hero Home -->
+    <!-- Status Hero -->
+    <div class="status-hero">
+        <div class="item-status-hero overview">
+            <i class='icofont-globe'></i>
+            <span>Stats Overview</span>
+            <h2>Global</h2>
+        </div>
+        <div class="item-status-hero cases">
+            <i class='bx bxs-virus'></i>
+            <span>Totol Coronavirus Cases</span>
+            <h2>1,234,543</h2>
+        </div>
+        <div class="item-status-hero recovered">
+            <i class='bx bxs-virus'></i>
+            <span>Total Recovered</span>
+            <h2>259,554</h2>
+        </div>
+        <div class="item-status-hero deaths">
+            <i class='bx bxs-virus'></i>
+            <span>Total Deaths</span>
+            <h2>68,184</h2>
+        </div>
+    </div>
+    <!-- End Status Hero -->
+    <div class="main">
+        <!-- Dashboard -->
+        <section class="dashboard">
+            <div class="dashboard-container">
+                <div class="row-items left">
+                    <div class="description-map">
+                        <h2>Covid-19 Affected Areas</h2>
+                        <div class="items">
+                            <div><span>Most Affacted</span><i class="icofont-chart-pie" style="color: #FF3E29;"></i>
+                            </div>
+                            <div><span>Lass Affected</span><i class="icofont-chart-pie" style="color: #00DB75;"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="vmap"></div>
+                </div>
+                <div class="row-items right">
+                    <input type="text" id="find-location">
+                    <div id="global-status">
+                        <span>Global</span>
+                        <span class="right">123,456,789</span>
+                    </div>
+                    <div class="item"> <span>Global</span>
+                        <span>123,456,789</span>
+                    </div>
+                    <div class="item"> <span>Global</span>
+                        <span>123,456,789</span>
+                    </div>
+                    <div class="item"> <span>Global</span>
+                        <span>123,456,789</span>
+                    </div>
+                    <div class="item"> <span>Global</span>
+                        <span>123,456,789</span>
+                    </div>
+                    <div class="item"> <span>Global</span>
+                        <span>123,456,789</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- End Dashboard -->
+    </div>
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="assets/vendor/jquery/jquery.min.js"></script>
     <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
     <script src="assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+    <script src="assets/vendor/jqvmap-master/dist/jquery.vmap.min.js"></script>
+    <script src="assets/vendor/jqvmap-master/dist/maps/jquery.vmap.world.js"></script>
     <!-- Main JS -->
     <script src="assets/js/main.dev.js"></script>
 </body>
