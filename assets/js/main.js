@@ -68,7 +68,7 @@ var renderNational = (countries) => {
     for(var national of countries){
         result +=   `<div class="item">
                         <div> 
-                            <img src="../assets/image/country/${national.Slug}.svg" class="img-fluid" alt="${national.Country}">
+                            <img src="../image/country/${national.Slug}.svg" class="img-fluid" alt="${national.Country}">
                             <span>${national.Country}</span>
                         </div>
                         <p>${String(national.TotalRecovered).replace(/(.)(?=(\d{3})+$)/g, '$1,')}</p>

@@ -78,7 +78,7 @@ var renderNational = function renderNational(countries) {
   try {
     for (var _iterator = countries[Symbol.iterator](), _step; !(_iteratorNormalCompletion = (_step = _iterator.next()).done); _iteratorNormalCompletion = true) {
       var national = _step.value;
-      result += "<div class=\"item\">\n                        <div> \n                            <img src=\"../assets/image/country/".concat(national.Slug, ".svg\" class=\"img-fluid\" alt=\"").concat(national.Country, "\">\n                            <span>").concat(national.Country, "</span>\n                        </div>\n                        <p>").concat(String(national.TotalRecovered).replace(/(.)(?=(\d{3})+$)/g, '$1,'), "</p>\n                    </div>");
+      result += "<div class=\"item\">\n                        <div> \n                            <img src=\"../image/country/".concat(national.Slug, ".svg\" class=\"img-fluid\" alt=\"").concat(national.Country, "\">\n                            <span>").concat(national.Country, "</span>\n                        </div>\n                        <p>").concat(String(national.TotalRecovered).replace(/(.)(?=(\d{3})+$)/g, '$1,'), "</p>\n                    </div>");
     }
   } catch (err) {
     _didIteratorError = true;
