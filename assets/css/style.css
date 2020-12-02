@@ -2,11 +2,8 @@ body,
 html {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
   font-family: "Rubik", sans-serif;
   box-sizing: border-box;
-  font-family: "Quicksand", sans-serif;
-  font-size: 62.5%;
   font-size: 10px;
   background-color: #F2F3F7;
 }
@@ -24,6 +21,22 @@ html a:hover {
   padding: 0;
   margin: 0;
   width: 100%;
+}
+
+/*--------------------------------------------------------------
+# ScrollBar Nav
+--------------------------------------------------------------*/
+nav::-webkit-scrollbar {
+  width: 0.1em;
+}
+
+nav::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 6px #0000;
+}
+
+nav::-webkit-scrollbar-thumb {
+  background-color: #0000;
+  outline: 1px solid #0000;
 }
 
 /*--------------------------------------------------------------
@@ -222,6 +235,7 @@ html a:hover {
 --------------------------------------------------------------*/
 .dashboard {
   margin: 0 20rem;
+  padding-bottom: 20rem;
 }
 .dashboard .dashboard-container {
   width: 100%;
@@ -241,6 +255,7 @@ html a:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
+  height: 52rem;
 }
 .left .description-map {
   width: 90%;
@@ -278,31 +293,66 @@ html a:hover {
 .right {
   width: 35%;
   font-size: 1.4rem;
+  height: 52rem;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.right > * {
+.right #find-location {
+  font-size: 1.4rem;
+  padding: 1.4rem;
   width: 90%;
-  height: 2.8em;
+  height: 5rem;
   border-radius: 0.5rem;
   margin: 1rem 0;
-}
-.right #find-location {
-  width: 90%;
-  height: 2.8em;
 }
 .right #global-status {
   background-color: #FFFFFF;
-  border: 1px #262C7C solid;
+  border: 0.1rem #262C7C solid;
+  display: flex;
+  padding: 0 0.5rem;
+  justify-content: space-between;
+  width: 90%;
+  height: 5rem;
+  border-radius: 0.5rem;
+  margin: 1rem 0;
+  padding-left: 1rem;
+}
+.right #global-status span {
+  text-align: center;
+  padding-top: 1.2rem;
+}
+.right #listItems {
+  overflow-y: auto;
+  width: 90%;
+}
+.right #listItems .item {
+  background: #F2F3F7;
+  border-radius: 0.5rem;
+  width: 100%;
+  height: 5rem;
+  margin-top: 2rem;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2rem;
+  padding-left: 1rem;
 }
-.right .item {
-  background-color: #F2F3F7;
-  height: 2.8em;
-  border-radius: 0.5rem;
-  margin: 1rem 0;
+.right #listItems .item div img {
+  height: 2.6rem;
+  width: 2.6rem;
+}
+.right #listItems .item div span {
+  margin-left: 1rem;
+  font-weight: 600;
+  font-size: 1.5rem;
+  color: #2D2E39;
+  height: 2.5rem;
+}
+.right #listItems .item p {
+  text-align: right;
+  margin: 0;
+  height: 2.5rem;
+  color: #6468A1;
+  font-size: 1.5rem;
+  padding-right: 1rem;
 }
