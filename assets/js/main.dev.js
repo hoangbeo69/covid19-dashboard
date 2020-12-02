@@ -38,7 +38,7 @@ $(document).ready(function () {
     for (var _i = 0, _arr = arr; _i < _arr.length; _i++) {
       var key = _arr[_i];
       document.getElementById(key).innerHTML = String(global[key]).replace(/(.)(?=(\d{3})+$)/g, '$1,');
-    } //thưc hiện set data ta cho totalcònỉmedob
+    } //thưc hiện set data ta cho totalconfired
 
 
     document.getElementById('TotalConfirmedOV').innerHTML = String(global["TotalRecovered"]).replace(/(.)(?=(\d{3})+$)/g, '$1,'); //thưc hiển xử lý dữ  liệu trở về dạng cơ bản hơn chỉ có 3 tham số 

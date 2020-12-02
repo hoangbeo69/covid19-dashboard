@@ -37,7 +37,7 @@ $(document).ready(function () {
         for(var key of arr){
             document.getElementById(key).innerHTML = String(global[key]).replace(/(.)(?=(\d{3})+$)/g, '$1,');
         }
-        //thưc hiện set data ta cho totalcònỉmedob
+        //thưc hiện set data ta cho totalconfired
         document.getElementById('TotalConfirmedOV').innerHTML = String(global["TotalRecovered"]).replace(/(.)(?=(\d{3})+$)/g, '$1,');
         //thưc hiển xử lý dữ  liệu trở về dạng cơ bản hơn chỉ có 3 tham số 
         var countries = data.Countries.map((country)=>{
